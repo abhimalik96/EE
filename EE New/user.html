@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+
+        $(document).ready(function(){
+        
+          $('[data-toggle="tooltip"]').tooltip(); 
+  
+      });
+    </script>
+    <!--META-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!--BOOTSTRAP CSS-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+      <!--JQUERY-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+
+        $(document).ready(function(){
+        
+          $('[data-toggle="tooltip"]').tooltip(); 
+  
+      });
+      
+      </script>
+  
+      <!--BOOTSTRAP JS-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+
+
+    body {
+      background-image: url(new.jpg);
+    }
+
+     @font-face {        /*CUSTOM FONT FOR THE LOGO*/
+
+          font-family: titleFont;
+          src: url(Pacifico.ttf);
+      }
+
+      .panel-heading {
+        font-family: Times New Roman;
+        background-color: black; 
+        color: white;
+      }
+      .panel-body{
+        width: 250px;
+        height: 330px;
+      }
+
+      #first{
+        top: 10%;
+        font-size: 40px;
+        align-content: cetner;
+      }
+
+      input[type="text"]{
+        border-radius: 8px;
+      }
+
+      .container {
+        color: white;
+      }
+      .borderless td, .borderless th {
+    border: none !important;
+}
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="font-family: titleFont; color: white;"href="#">TaleBox<sup>&copy;</sup></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav">
+        <li ><a href="ecom.html">Home</a></li>
+        
+       
+        <li><a href="#">Contact</a></li>
+
+        <li class="active"><a href="user.html">Reader's Corner</a></li>
+
+        <li><a href="reader.html">reader's Desk</a></li>
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Welcome Readers</h1>
+  <p style="font-size: 20px; font-weight: bold;">Explore stories and tales from a plethora of genres written by a culturally and geographically varied collection of readers. Sign up today! </p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#Sign-Up" style="font-size: 30px; background-color: white;">Sign-Up</a></li>
+    <li ><a data-toggle="tab" href="#login" style="font-size: 30px; background-color: white;">Login</a></li>
+    
+   </ul>
+
+  <div class="tab-content" >
+    <div id="Sign-Up" class="tab-pane fade in active">
+
+
+          
+            
+              <form name="reader_registration" method="POST" action="reader_registration.php">
+
+      
+                <table class="table borderless" style="font-size: 25px;">
+                
+                  <tr>
+                
+                    <td>
+                      <label for="reader_name">First Name:</label>
+                    </td>
+
+                    <td>
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Your First Name"><input class="form-control" id="reader_name" name="reader_name" required></a>
+                    </td>
+                
+                  </tr>
+
+                  <tr>
+                
+                    <td>
+                      <label for="reader_mname">Middle Name:</label>
+                    </td>
+
+                    <td>
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Your Middle Name"><input class="form-control" id="reader_mname" name="reader_mname" required></a>
+                    </td>
+                
+                  </tr>
+
+                  <tr>
+                
+                    <td>
+                      <label for="reader_name">Last Name:</label>
+                    </td>
+
+                    <td>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Your Last Name"><input class="form-control" id= "reader_lname" name="reader_lname" required></a>
+                    </td>
+                
+                  </tr>
+
+                  <tr>
+                
+                    <td>
+                      <label for="reader_email">Email Address:</label>
+                    </td>
+
+                    <td>
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Your email address for registration"><input type="email" class="form-control" id="reader_email" name="reader_email" required></td>
+                    </td>
+                
+                  </tr>
+  
+                <tr>
+                    <td>
+                      <label for="reader_password">Password:</label>
+                    </td>
+
+                    <td>
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Ensure your password is atleast 8 characters long and includes a number as well as a special character"><input type="password" class="form-control" id="reader_password" name="reader_password" required>
+                    </td>
+                
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="reader_sex">Sex:</label>
+                    </td>
+
+                    <td>
+                      <select id="reader_sex" name="reader_sex" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select> 
+                    </td>
+                
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="reader_DOB">Date Of Birth:</label>
+                    </td>
+
+                    <td>
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="So that we never forget to wish you!"><input type="date" id="reader_DOB" name="reader_DOB" required>
+                    </td>
+                
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="reader_num">Phone Number:</label>
+                    </td>
+
+                      <td>
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Your Mobile Phone Number">
+                      <select id="reader_num1" name="reader_num1" required>
+                        <option value="+91">+91</option>
+                      </select>   
+                      <input type="number" id="reader_num2" name="reader_num2" max="10" required>
+                    </td>
+                
+                  </tr>
+              
+                </table>      
+            
+              <button type="reset" class="btn btn-success" style="border-radius: 15px; font-size: 20px; font-family: titleFont; width: 90px; height: 40px;">Reset</button>
+
+              <button type="submit" class="btn btn-success pull-right" style="border-radius: 15px; font-size: 20px; font-family: titleFont; width: 90px; height: 40px;">Submit</button>
+
+          </form>
+  
+          </div>
+
+      </div>
+    </div>
+  </div>
+     
+    </div>
+    <div id="login" class="tab-pane fade">
+      <p>sldfhsldfh</p>
+      </div>
+</div>
+</div>
+
+
+</body>
+</html>

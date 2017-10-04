@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    body {
+    	background-image: url(new.jpg);
+    }
+
+     @font-face {        /*CUSTOM FONT FOR THE LOGO*/
+
+          font-family: titleFont;
+          src: url(Pacifico.ttf);
+      }
+
+      .panel-heading {
+      	font-family: Times New Roman;
+      	background-color: black; 
+      	color: white;
+      }
+      .panel-body{
+      	width: 250px;
+      	height: 330px;
+      }
+
+      #first{
+      	top: 10%;
+      	font-size: 40px;
+      	align-content: cetner;
+      }
+
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="font-family: titleFont; color: white;"href="#">TaleBox<sup>&copy;</sup></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="ecom.html">Home</a></li>
+        
+       
+        <li><a href="#">Contact</a></li>
+
+        <li><a href="user.html">Reader's Corner</a></li>
+
+        <li><a href="author.html">Author's Desk</a></li>
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="paris.jpg" alt="Los Angeles" style="width:100%; height: 650px;">
+        <div class="carousel-caption">
+          <h3 style="font-weight: bold;">Travel And Love</h3>
+          <p>Traveling is love and love is travelling, explore the romantic tales our authors have woven.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="war4.jpg" alt="Chicago" style="width:100%; height: 650px;">
+        <div class="carousel-caption">
+          <h3 style="font-weight: bold;">Story Of The Month</h3>
+          <p>Rishabh Talwar's war story on Indo-Pakistan conflict wins our story of the month. Read his chronicle now to catch a glimpse of the terro that is war.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="penny.jpg" alt="New York" style="width:100%; height: 650px;">
+        <div class="carousel-caption">
+          <h3 style="font-weight: bold;">IT inspired horror</h3>
+          <p>Our authors have written some bone chilling IT inspired stories. Check them out today, or better yet write your own.</p>
+        </div>
+      </div>
+  
+    </div>
+
+   
+  </div>
+</nav>
+<br>
+<br>
+
+<div class="col-md-12">
+
+	<div class="container">    
+  		<div class="row">
+    		<div class="col-sm-3">
+      			
+      			<div class="panel">
+        			<div class="panel-heading" >ACTION</div>
+        				<div class="panel-body"><img src="bond.png" class="img-responsive" style="width:100%; height: 100%;" alt="Imagessssss"></div>	
+        		</div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel">
+        <div class="panel-heading" >WAR</div>
+        <div class="panel-body"><img src="soldier.png" class="img-responsive" style="width:100%; height: 100%;" alt="Image"></div>
+        
+      </div>
+    </div>
+  
+	
+	<div class="col-sm-3"> 
+      <div class="panel" >
+        <div class="panel-heading" >CHILDREN</div>
+        <div class="panel-body" ><img src="mary.jpg" class="img-responsive" style="width:100%; height: 100%;" alt="Image"></div>
+        
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="panel">
+        <div class="panel-heading">COMEDY</div>
+        <div class="panel-body"><img src="charlie.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        
+      </div>
+    </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="container">    
+  <div class="row">
+  	<div class="col-sm-3"> 
+      <div class="panel">
+        <div class="panel-heading">CRIME</div>
+        <div class="panel-body"><img src="criminak.jpg" class="img-responsive" style="width:100%; height: 100%;" alt="Image"></div>
+        
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel">
+        <div class="panel-heading">SCIENCE FICTION</div>
+        <div class="panel-body"><img src="aline.png" class="img-responsive" style="width:100%; height: 100%;" alt="Image"></div>
+        
+      </div>
+    </div>
+
+	
+	<div class="col-sm-3"> 
+      <div class="panel">
+        <div class="panel-heading">MYSTERY</div>
+        <div class="panel-body"><img src="detective.jpg" class="img-responsive" style="width:100%; height: 100%;" alt="Image"></div>
+        
+      </div>
+    </div>
+
+    <div class="col-sm-3"> 
+      <div class="panel">
+        <div class="panel-heading">HORROR</div>
+        <div class="panel-body"><img src="freddie.jpg" class="img-responsive" style="width:100%; height: 100%;" alt="Image"></div>
+        
+      </div>
+    </div>
+    
+
+
+    
+   </body>
+</html>

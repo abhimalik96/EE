@@ -1,0 +1,50 @@
+
+h3 {						/*ALL H3 VALUES*/ 
+
+	text-align: center;
+	color: #2196f3;
+	font-size: 30px;
+	font-style: italic;
+}
+
+body {						/*FOR BODY CONTENT*/
+
+	font-family: arial;	
+}
+
+@font-face { 				/*CUSTOM FONT FOR THE LOGO*/
+
+	font-family: titleFont;
+   	src: url(Pacifico.ttf);
+}
+
+#title {					/*MAIN TAILBOX TITLE*/
+	
+	text-align: center;
+	font-family: titleFont;
+	font-size: 80px;
+	z-index: 1;
+	font-weight: bold;
+}
+
+h4 {						/*ALL H4 VALUES*/ 
+
+	text-align: center;
+	font-family: titleFont;
+}
+
+.btn-primary {
+
+	background-color: : red;
+}
+
+li {
+
+	color: black;
+	font-weight: bold;
+	font-size: 17px; 
+}
+
+.backdrop {
+	z-index: -1;
+}
